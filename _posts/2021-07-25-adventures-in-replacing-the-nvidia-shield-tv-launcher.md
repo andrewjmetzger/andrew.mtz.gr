@@ -1,6 +1,6 @@
 ---
-title: 'Adventures in Replacing the NVidia Shield TV&#8217;s Launcher'
-date: '2021-07-25T16:16:28-04:00'
+title: "Adventures in Replacing the NVidia Shield TV Launcher"
+date: 2021-07-25T16:16:28-04:00
 categories: [guides, android, powershell]
 ---
 
