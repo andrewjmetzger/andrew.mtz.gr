@@ -4,19 +4,9 @@ date: '2021-07-25T16:16:28-04:00'
 categories: [guides, android, powershell]
 ---
 
-
-	
-
----
-title: TITLE
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
-categories: [TOP_CATEGORIE, SUB_CATEGORIE]
-tags: [TAG]     # TAG names should always be lowercase
----
-
 ## Background
 
-When Shield Experience Update 8.2.3 rolled out to my Shield TVs, I was dismayed to see Google’s “Recommendations” for content atop the new home screen. Here’s one for *Cruella* — woefully out of place on a premium set-top-box that retails for $150 USD.
+When Shield Experience Update 8.2.3 rolled out to my Shield TVs, I was dismayed to see Google’s “Recommendations” for content atop the new home screen. Here’s one for *Loki* — woefully out of place on a premium set-top-box that retails for $150 USD.
 
 ![](https://9to5google.com/wp-content/uploads/sites/4/2021/06/SHIELD_TV_Discover_home-page.png)
 _The new “Discovery UI” features promoted content atop the home screen. // Image credit: 9to5Google._
