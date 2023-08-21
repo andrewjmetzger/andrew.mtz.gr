@@ -43,7 +43,7 @@ Note: If this didn't work for you, wait a day or two for the toggle to show up. 
 
 # Enable ADB, fastboot, and USB debugging
 
-```powershell
+```
 PS C:\Users\andrew\Downloads\SM-T220\> adb devices
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
@@ -65,7 +65,7 @@ The `fastboot devices` command might show nothing.
 3. Install any Samsung, MediaTek, or Android Bootloader Interface updates.
 4. Run `fastboot devices` again and the tablet should appear.
 
-```powershell
+```
 PS C:\Users\andrew\Downloads\SM-T220\> fastboot devices
 R83W70G77AT      fastboot
 ```
@@ -108,7 +108,7 @@ Download: [Magisk APK][magisk-apk]
 
 Copy APK to ZIP by changing the file extension.
 
-```powershell
+```
 PS C:\Users\andrew\Downloads\SM-T220\> cp ./Magisk-v26.1.apk ./Magisk-v26.1.zip
 PS C:\Users\andrew\Downloads\SM-T220\> adb push ./Magisk-v26.1.zip /sdcard/
 ```
@@ -116,7 +116,7 @@ Install ZIP via recovery.
 
 Install the APK via ADB.
 
-```powershell
+```
 PS C:\Users\andrew\Downloads\SM-T220\> adb install ./Magisk-v26.1.apk
 ```
 
