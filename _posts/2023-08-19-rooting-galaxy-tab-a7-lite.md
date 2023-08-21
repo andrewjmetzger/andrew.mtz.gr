@@ -74,9 +74,9 @@ R83W70G77AT      fastboot
 
 Flash [the latest PitchBlack Recovery image][pbrp] via ODIN using "BL" mode.
 
-Next, remove Crypto on /data/
+Next, wipe the /data/ partition to make it usable with PBRP by removing the factory encryption:
 
-1. Boot to Recovery  (Power + Vol Up)
+1. Boot to Recovery  (Power + Volume Up)
 2. Settings
 3. Format Data
 4. Type "yes"
