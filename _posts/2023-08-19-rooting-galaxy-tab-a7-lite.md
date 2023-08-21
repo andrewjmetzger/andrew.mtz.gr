@@ -140,7 +140,7 @@ Open tha app and complete install. Select the recommended option, not patch imag
 - [Bromite][bromite-repo]: Privacy-Oriented Chromium (add repository to Droid-ify).
 - [ReVanced][youtube-revanced]: YouTube patches
 
-# Links
+<!-- Links -->
 
 [samsung-windows-drivers]: https://www.samsung.com/us/support/downloads/?model=N0053679&modelCode=SM-T220NZAAXAR
 [samsung-odin]: https://forum.xda-developers.com/attachments/odin3-v3-14-1_3b_patched-zip.5158507/
