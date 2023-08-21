@@ -43,14 +43,14 @@ Note: If this didn't work for you, wait a day or two for the toggle to show up. 
 
 # Enable ADB, fastboot, and USB debugging
 
-```
-PS C:\Users\andrew> adb devices
+```powershell
+> adb devices
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 List of devices attached
 R83W70G77AT     device
 
-PS C:\Users\andrew> fastboot devices
+> fastboot devices
 R83W70G77AT      fastboot
 ```
 
@@ -65,8 +65,8 @@ The `fastboot devices` command might show nothing.
 3. Install any Samsung, MediaTek, or Android Bootloader Interface updates.
 4. Run `fastboot devices` again and the tablet should appear.
 
-```
-PS C:\Users\andrew> fastboot devices
+```sh
+> fastboot devices
 R83W70G77AT      fastboot
 ```
 
@@ -108,16 +108,16 @@ Download: [Magisk APK][magisk-apk]
 
 Copy APK to ZIP by changing the file extension.
 
-```
-cp ./Magisk-v26.1.apk ./Magisk-v26.1.zip
-adb push ./Magisk-v26.1.zip /sdcard/
+```powershell
+> cp ./Magisk-v26.1.apk ./Magisk-v26.1.zip
+> adb push ./Magisk-v26.1.zip /sdcard/
 ```
 Install ZIP via recovery.
 
 Install the APK via ADB.
 
-```
-adb install ./Magisk-v26.1.apk
+```powershell
+> adb install ./Magisk-v26.1.apk
 ```
 
 Open tha app and complete install. Select the recommended option, not patch image.
