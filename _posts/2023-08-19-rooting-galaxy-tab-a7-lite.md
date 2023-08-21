@@ -152,7 +152,6 @@ Patching should take a minute or so.
 <!-- Links -->
 
 [xda]: https://forum.xda-developers.com/f/samsung-galaxy-tab-a7-lite.12329/
-[xda-]
 
 [samsung-windows-drivers]: https://www.samsung.com/us/support/downloads/?model=N0053679&modelCode=SM-T220NZAAXAR
 [samsung-odin]: https://forum.xda-developers.com/attachments/odin3-v3-14-1_3b_patched-zip.5158507/
