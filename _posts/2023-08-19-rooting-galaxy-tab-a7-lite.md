@@ -44,13 +44,13 @@ Note: If this didn't work for you, wait a day or two for the toggle to show up. 
 # Enable ADB, fastboot, and USB debugging
 
 ```powershell
-> adb devices
+PS C:\Users\andrew\Downloads\SM-T220\> adb devices
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 List of devices attached
 R83W70G77AT     device
 
-> fastboot devices
+PS C:\Users\andrew\Downloads\SM-T220\> fastboot devices
 R83W70G77AT      fastboot
 ```
 
@@ -65,8 +65,8 @@ The `fastboot devices` command might show nothing.
 3. Install any Samsung, MediaTek, or Android Bootloader Interface updates.
 4. Run `fastboot devices` again and the tablet should appear.
 
-```sh
-> fastboot devices
+```powershell
+PS C:\Users\andrew\Downloads\SM-T220\> fastboot devices
 R83W70G77AT      fastboot
 ```
 
@@ -74,9 +74,9 @@ R83W70G77AT      fastboot
 
 Flash [the latest PitchBlack Recovery image][pbrp] via ODIN using "BL" mode.
 
-Next, remove Crypto on /data/
+Next, wipe the /data/ partition to make it usable with PBRP by removing the factory encryption:
 
-1. Boot to Recovery  (Power + Vol Up)
+1. Boot to Recovery  (Power + Volume Up)
 2. Settings
 3. Format Data
 4. Type "yes"
@@ -109,18 +109,18 @@ Download: [Magisk APK][magisk-apk]
 Copy APK to ZIP by changing the file extension.
 
 ```powershell
-> cp ./Magisk-v26.1.apk ./Magisk-v26.1.zip
-> adb push ./Magisk-v26.1.zip /sdcard/
+PS C:\Users\andrew\Downloads\SM-T220\> cp ./Magisk-v26.1.apk ./Magisk-v26.1.zip
+PS C:\Users\andrew\Downloads\SM-T220\> adb push ./Magisk-v26.1.zip /sdcard/
 ```
 Install ZIP via recovery.
 
 Install the APK via ADB.
 
 ```powershell
-> adb install ./Magisk-v26.1.apk
+PS C:\Users\andrew\Downloads\SM-T220\> adb install ./Magisk-v26.1.apk
 ```
 
-Open tha app and complete install. Select the recommended option, not patch image.
+Open the Magisk app and complete install. Select the recommended option, not patch image.
 
 ## Modules 
 
