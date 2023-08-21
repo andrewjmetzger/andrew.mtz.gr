@@ -9,6 +9,10 @@ title: Rooting a Samsung Galaxy Tab A7 Lite
 - [Galaxy Tab A7 Lite USB drivers][samsung-windows-drivers]
 - [Odin with 3B patch, v3.1.4.1][samsung-odin]
 
+General info:
+
+- [XDA forum for Samsung Galaxy Tab A7 Lite][xda]
+
 # Unlock Bootloader
 
 ## Getting "OEM Unlock" to appear
@@ -72,6 +76,8 @@ R83W70G77AT      fastboot
 
 # Custom recovery
 
+Issue `adb reboot download`.
+
 Flash [the latest PitchBlack Recovery image][pbrp] via ODIN using "BL" mode.
 
 Next, wipe the /data/ partition to make it usable with PBRP by removing the factory encryption:
@@ -120,7 +126,10 @@ Install the APK via ADB.
 PS C:\Users\andrew\Downloads\SM-T220\> adb install ./Magisk-v26.1.apk
 ```
 
-Open the Magisk app and complete install. Select the recommended option, not patch image.
+Open the Magisk app and complete install. Select the **Direct Install (Recommended)** option.
+
+Patching should take a minute or so.
+
 
 ## Modules 
 
@@ -141,6 +150,9 @@ Open the Magisk app and complete install. Select the recommended option, not pat
 - [ReVanced][youtube-revanced]: YouTube patches
 
 <!-- Links -->
+
+[xda]: https://forum.xda-developers.com/f/samsung-galaxy-tab-a7-lite.12329/
+[xda-]
 
 [samsung-windows-drivers]: https://www.samsung.com/us/support/downloads/?model=N0053679&modelCode=SM-T220NZAAXAR
 [samsung-odin]: https://forum.xda-developers.com/attachments/odin3-v3-14-1_3b_patched-zip.5158507/
