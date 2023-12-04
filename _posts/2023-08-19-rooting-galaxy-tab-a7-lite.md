@@ -146,7 +146,6 @@ Patching should take a minute or so.
 - [Droid-ify][droid-ify]: F-Droid client.
 - [Ad-Away][ad-away]: System-wide adblock.
 - [Mull][mull]: Privacy-oriented build of Firefox.
-- [Bromite][bromite-repo]: Privacy-Oriented Chromium (add repository to Droid-ify).
 - [ReVanced][youtube-revanced]: YouTube patches
 
 <!-- Links -->
@@ -170,5 +169,4 @@ Patching should take a minute or so.
 [droid-ify]:https://github.com/Droid-ify/client/releases/latest
 [ad-away]: https://github.com/AdAway/AdAway/releases/latest
 [mull]: https://f-droid.org/en/packages/us.spotco.fennec_dos/
-[bromite-repo]: https://www.bromite.org/fdroid
 [youtube-revanced]: https://revanced.app/download
