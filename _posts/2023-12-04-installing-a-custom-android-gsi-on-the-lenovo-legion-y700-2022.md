@@ -1,4 +1,18 @@
-# Y700 Custom GSI
+---
+title: "Installing the crDroid Android GSI on a 2022 Lenovo Legion Y700"
+date: 2023-12-04T18:52:00-04:00
+categories: [guides, android]
+---
+
+
+
+## Preparation
+
+### On your PC
+1. adb, fastboot,
+2. Download and extract the latest crDroid `arm64-BgN-Unofficial.img` from <https://github.com/naz664/crDroid_gsi/releases>. The archive should contain one IMG file.
+  
+#### About GSI files
 
 According to [Treble Info app (sideloaded apk)](https://f-droid.org/packages/tk.hack5.treblecheck/), the Y700 2022 is an arm64 A/B device. To determine whch GSI you need, look at the download names, `<ARCH>_xyZ.img.xz`. 
 
@@ -23,12 +37,6 @@ N = no superuser
 S = superuser included
 ```
 
-## Preparation
-
-### On your PC
-1. adb, fastboot,
-2. 3. Download and extract the latest crDroid `arm64-BgN-Unofficial.img`: https://github.com/naz664/crDroid_gsi/releases. The archive should contain one IMG file.
-
 ### On the device
 
 1. Go to Settings > My Device > tap "ZUI version" 10 times until you are a developer.
@@ -47,7 +55,7 @@ S = superuser included
 3. You will reboot into a chinese language setup screen. The left option is YES for ADB authorization and check the box to remember this.
 4. Confirm DEVICE STATE is "unlocked": `adb reboot bootloader`
 
-# Flashing the GSI
+## Flashing the GSI
 
 1. Go back to fastboot: `adb reboot fastboot` (Or turn off the device and hold <kbd>POWER</kbd> + <kbd>VOLUME DOWN</kbd>). You will see a red "fastbootd" at the top of the screen.
 2. Wipe the "system" partition before installing any GSI: `fastboot erase system`
@@ -57,7 +65,6 @@ S = superuser included
   Finished. Total time: 0.109s
   ```
 3. Flash the GSI you extracted before: `fastboot flash system .\crDroid-x.xx-arm64_bgN-Unofficial.img`. This takes about two minutes.
-
   ```
   $ fastboot flash system .\crDroid-9.10-arm64_bgN-Unofficial.img
   Resizing 'system_a'                                OKAY [  0.005s]
@@ -95,7 +102,6 @@ S = superuser included
   Writing 'system_a'                                 OKAY [  0.324s]
   Finished. Total time: 105.220s
   ```
-
 4. Next, initialize it with the following command: `fastboot -w`
    ```
   $ fastboot -w
