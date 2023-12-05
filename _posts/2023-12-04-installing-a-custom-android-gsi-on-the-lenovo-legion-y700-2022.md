@@ -119,6 +119,7 @@ S = superuser included
 6. After configuring Wi-Fi, Google account (optional), and PIN, you may get stuck at ythe face unlock screen. These commands should bypass the OOBE/setup wizard:
   ```
   $ adb shell settings put secure user_setup_complete 1
-  $ adb shell settings put global device_provisioned 1 
+  $ adb shell settings put global device_provisioned 1
+  $ adb shell pm disable-user --user 0 com.google.android.setupwizard 
   $ adb reboot
   ```
